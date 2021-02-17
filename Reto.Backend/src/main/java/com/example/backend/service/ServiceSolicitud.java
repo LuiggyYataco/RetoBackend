@@ -4,6 +4,7 @@ import com.example.backend.entity.Solicitud;
 
 public interface ServiceSolicitud {
 
-	public void GuardarSolicitud(Solicitud solicitud);
-	
+	public Solicitud GuardarSolicitud(Solicitud solicitud);
+	boolean existsName(String name);
+	boolean existEmail(String email);
 }
